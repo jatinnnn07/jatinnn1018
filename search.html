@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Search Transaction</title>
+	<style>
+		/* Set the background color to black and text color to white */
+		body {
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		/* Set the font and font size for the entire page */
+		body,
+		input {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+		}
+
+		/* Style the search form */
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			text-align: center;
+		}
+
+		/* Style the search input field and label */
+		label,
+		input[type="text"] {
+			display: block;
+			margin: 10px auto;
+			width: 100%;
+			max-width: 400px;
+			padding: 10px;
+			border: none;
+			background-color: #ffffff;
+			color: #000000;
+			border-radius: 10px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+
+		/* Style the search button */
+		input[type="submit"] {
+			display: block;
+			margin: 10px auto;
+			padding: 10px;
+			border: none;
+			background-color: #ffffff;
+			color: #000000;
+			border-radius: 10px;
+			box-sizing: border-box;
+			text-align: center;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Search Transaction</h1>
+    <form method="POST" action="/search">
+        <p>
+            <label for="search_term">Enter Description:</label>
+            <input type="text" name="search_term" id="search_term" required>
+        </p>
+        <p>
+            <input type="submit" value="Search">
+        </p>
+    </form>
+</body>
+
+</html>

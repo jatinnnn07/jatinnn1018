@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add New Transaction</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            margin-top: 50px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px white;
+            background-color: black
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(43, 42, 42);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #1aafe5;
+            color: #0e0e0e;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add New Transaction</h1>
+    <form method="POST">
+        <label>Description</label>
+        <input type="text" name="description" required><br>
+        <label>Date</label>
+        <input type="text" name="date"  required><br>
+        <label>Amount</label>
+        <input type="integer" name="amount" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
