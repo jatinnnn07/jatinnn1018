@@ -37,8 +37,11 @@ def view():
     c.execute("SELECT * FROM expenses ORDER BY date")
 
     data = c.fetchall()
+  # Calculate total expenses
+    total_expenses = sum([row[2] for row in data])
+
     conn.close()
-    return render_template('view.html', data=data)
+    return render_template('view.html', data=data, total_expenses=total_expenses)
 
 
 @app.route('/search', methods=['GET', 'POST'])
